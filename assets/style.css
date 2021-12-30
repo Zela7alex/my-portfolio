@@ -14,7 +14,7 @@
 }
 
 html,body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
     color: #FFFFFF;
     width: 100%;
@@ -34,7 +34,7 @@ header {
     position: sticky;
     left: 0;
     padding: 0 0 15px;
-    overflow: hidden;   
+       
 
 }
 header h2 {
@@ -89,7 +89,7 @@ header nav ul li a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 80px;
-    overflow: hidden;
+    
     
 }
 .hero h1{
@@ -110,8 +110,7 @@ header nav ul li a:hover {
     filter: grayscale(1);
 
 }
-.right-col {
-    
+.right-col { 
     width: 100%;
     margin: 3.5%;
     padding-top: 40%;
@@ -173,7 +172,6 @@ header nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
     padding-top: 20px;
     
 }
@@ -187,13 +185,54 @@ header nav ul li a:hover {
 
 }
 
-.section-title:hover {
-    color: var(--third-color);
-    opacity: 0.6;
+.section-title {
+    text-shadow: 2px 2px 4px #000;
+    font-size: 50px;
 }
 
 
 /* SERVICES */
+    .container {
+        outline: 1px solid white;
+        width: 100%;
+        padding: 0 8%;
+    }
+
+    .container h1 {
+       text-align: center;
+       padding-top: 10%;
+       margin-bottom: 60px;
+       font-weight: 600px;
+       position: relative;
+    
+    }
+     .container h1::after {
+        content: '';
+        background: var(--secondary-color);
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+    .service {
+        text-align: center;
+        padding: 25px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        background: transparent;
+    }
+    .service i {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
 
 
 
@@ -210,6 +249,7 @@ header nav ul li a:hover {
 
 /* IMAGE GRID FOR PORTFOLIO */
     .image-grid {
+        outline: 1px solid white;
         --gap: 16px;
         --num-cols: 4;
         --row-height: 200px;
@@ -223,11 +263,12 @@ header nav ul li a:hover {
         gap: var(--gap);
     }
 
-    .image-grid > img {
+    .image-grid img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+    
 
     /* IMAGE EXPAND 2 COLUMN CLASS */
     .image-grid-col-2 {
@@ -236,7 +277,83 @@ header nav ul li a:hover {
     .image-grid-row-2 {
         grid-column: span 2;  
       }
+   
+
+/* RESUME */
+    .resume {
+        outline: 1px solid white;
+    }
+    .resume h1 {
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 15%;
+        position: relative;
+    }
+
+    .resume h1::after {
+        content: '';
+        background: var(--secondary-color);
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+
+    .resume p {
+        text-align: center;
+        margin-bottom: 10px
+    }
     
+    .resume-btn {
+        color: var(--primary-color);
+        padding: 6px;
+        border-radius: 6px;
+        background: var(--secondary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 30%;
+        text-decoration: none;
+            
+    }
+
+    .resume-btn:hover {
+        color: var(--third-color);
+        background-color: var(--fourth-color);
+
+    }
+
+
+    .quote {
+        margin-top: 50px;
+
+    }
+    
+
+/* CONTACT ME */
+    .contact-me {
+        background-image: url("images/pexels-photo-92664.jpeg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
       
     /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
@@ -245,6 +362,9 @@ header nav ul li a:hover {
             --num-cols: 2;
             --row-height: 200px;
         }
+
+
+    }
     
     /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
@@ -259,13 +379,17 @@ header nav ul li a:hover {
         .image-grid-row-2 {
             grid-column: span 1;  
             }
+        
+        
+    }
     
     /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
         .image-grid {
-                --num-cols: 1;
-                --row-height: 200px;
+            --num-cols: 1;
+            --row-height: 200px;
     }
+        
 }
 
     
@@ -284,13 +408,3 @@ header nav ul li a:hover {
     
 
 
-
-
-
-/* RESUME */
-
-
-
-
-
-/* CONTACT ME */
