@@ -14,10 +14,10 @@
 }
 
 html,body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: sans-serif;
     background-color: black;
     color: #FFFFFF;
-    width: 100%;
+    /* width: 100%; */
     margin: 0px;
     height: 100%;
     padding: 0px;
@@ -28,10 +28,8 @@ html,body {
 
 /* HEADER */
 header {
-    outline: 1px solid white;
-    width: 100%;
     background: teal;
-    position: sticky;
+    position: relative;
     left: 0;
     padding: 0 0 15px;
        
@@ -39,13 +37,11 @@ header {
 }
 header h2 {
  font-size: 30px;
- font-family: 'Shadows Into Light', cursive; 
+ font-family: 'Shadows Into Light', cursive;
  position: relative;
- left: 130px;
- top: 30px;
-    
+ left: 20px;
+ 
 }
-
 
 header a {
     text-decoration: none;
@@ -54,8 +50,9 @@ header a {
 
 header nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 7px 0;
+    align-items: center;
 }
 
 header nav ul {
@@ -63,29 +60,25 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
+    text-shadow: 2px 2px 4px #000;
 }
 
 header nav ul li a {
     padding: 12px 15px;
     font-weight: lighter;
-    font-size: 1.20vw;
+    /* font-size: 1.20vw; */
 }
 
 header nav ul li a:hover {
     background: var(--secondary-color);
     color: var(--primary-color);
     border-radius: 10px;
-
 }
-
-
-
-
 
 
 /* HERO SECTION */
 .hero {
-    outline: 1px solid white;
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 80px;
@@ -101,7 +94,7 @@ header nav ul li a:hover {
     border-radius: 7px;
     width: 70%;
     text-align: left;
-    margin: 3.5% 10%;
+    margin: 15% 10%;
     cursor: pointer;
     filter: grayscale(0);
     transition: filter 1s;
@@ -111,9 +104,9 @@ header nav ul li a:hover {
 
 }
 .right-col { 
-    width: 100%;
-    margin: 3.5%;
+    /* width: 100%; */
     padding-top: 40%;
+    position: relative;
     
    
     
@@ -127,17 +120,26 @@ header nav ul li a:hover {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 28px;
+    left: 32px;
+    margin: 18px;
     border: 3px solid lightblue;
     border-radius: 8px;
     overflow: hidden;
     transition: transfrom 0.5s;
     font-size: 35px;
+    padding: 4px
+    
+}
+.full-icons {
+    margin-right: 3em;
+    
 }
 .icon i{
-    position: center;
     margin: 5px;
-    padding: 5px;
+    padding: 0px;
+    position: relative;
+    
+    
     
 }
 .icon a {
@@ -162,17 +164,17 @@ header nav ul li a:hover {
 
 /* ABOUT ME */
 .about-me {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    
 
 }
 .about-me h2 {
     outline: 1px solid white;
-    background-image: url("images/pexels-photo-92664.jpeg");
+    background-image: url("images/pexels-photo-462023.jpeg");
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    padding: 30px;
     
 }
 .about-me p {
@@ -193,8 +195,7 @@ header nav ul li a:hover {
 
 /* SERVICES */
     .container {
-        outline: 1px solid white;
-        width: 100%;
+        /* width: 100%; */
         padding: 0 8%;
     }
 
@@ -263,6 +264,10 @@ header nav ul li a:hover {
         gap: var(--gap);
     }
 
+    .text-image {
+        position: relative;
+    }
+
     .image-grid img {
         width: 100%;
         height: 100%;
@@ -277,6 +282,18 @@ header nav ul li a:hover {
     .image-grid-row-2 {
         grid-column: span 2;  
       }
+
+      .image-overlay {
+          position: absolute;
+          top: 3%;
+          left: 3%;
+          color: white;
+          text-shadow: 2px 2px 5px teal;
+        
+      }
+     .image-overlay p {
+         font-style: italic;
+     }
    
 
 /* RESUME */
@@ -334,8 +351,8 @@ header nav ul li a:hover {
     
 
 /* CONTACT ME */
-    .contact-me {
-        background-image: url("images/pexels-photo-92664.jpeg");
+        .contact-me {
+        background-image: url("images/pexels-photo-462023.jpeg");
         display: flex;
         align-items: center;
         justify-content: center;
@@ -343,14 +360,6 @@ header nav ul li a:hover {
 
     }
     
-
-
-
-
-
-
-
-
 
 
 
@@ -391,20 +400,3 @@ header nav ul li a:hover {
     }
         
 }
-
-    
-
-    
-    
-  
-  
-
-    
-    
-        
-        
-        
-
-    
-
-
