@@ -31,7 +31,7 @@ header {
     background: teal;
     position: relative;
     left: 0;
-    padding: 0 0 15px;
+    padding: 0 0 20px;
        
 
 }
@@ -83,7 +83,6 @@ header nav ul li a:hover {
     grid-template-columns: 1fr 1fr;
     padding-bottom: 80px;
     
-    
 }
 .hero h1{
     text-align: center;
@@ -107,9 +106,6 @@ header nav ul li a:hover {
     /* width: 100%; */
     padding-top: 40%;
     position: relative;
-    
-   
-    
     
 }
 
@@ -137,11 +133,9 @@ header nav ul li a:hover {
 .icon i{
     margin: 5px;
     padding: 0px;
-    position: relative;
-    
-    
-    
+    position: relative;  
 }
+
 .icon a {
     position: absolute;
     top: 0;
@@ -165,18 +159,17 @@ header nav ul li a:hover {
 /* ABOUT ME */
 .about-me {
     display: flex;
-    
-
 }
+
 .about-me h2 {
     outline: 1px solid white;
     background-image: url("images/pexels-photo-462023.jpeg");
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
-    
+    padding: 30px;  
 }
+
 .about-me p {
     outline: 1px solid white;
     display: flex;
@@ -184,7 +177,6 @@ header nav ul li a:hover {
     justify-content: center;
     padding: 15px;
     line-height: 1.5em;
-
 }
 
 .section-title {
@@ -375,9 +367,33 @@ header nav ul li a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 30px;
+    }   
+        .contact-box {
+            outline: 1px solid white;
+            padding: 100px;     
+        }
+        .contact-box p {
+            outline: 1px solid var(--third-color);
+            display: flex;
+            justify-content: center;
+            line-height: 2em;
+            padding: 50px 1px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .contact-box h3 {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        #music-photo {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding-top: 40px
+        }
         
-
-    }
     
 
 
@@ -407,7 +423,12 @@ header nav ul li a:hover {
         .image-grid-row-2 {
             grid-column: span 1;  
             }
-        
+            .hero h1{
+                text-align: center;
+                font-size: 40px;
+                /* margin-right: 200px; */
+            }
+         
         
     }
     
@@ -416,6 +437,89 @@ header nav ul li a:hover {
         .image-grid {
             --num-cols: 1;
             --row-height: 200px;
+        }
+        header {
+            padding: 0 0 30px;
+        }
+
+        header h2 {
+            display: none;
+        }
+        header nav ul li {
+            padding: 10px;
+        }
+
+        header nav {
+            padding-top: 20px;
+            margin: 2px;
+        }
+        header nav ul li a {
+            padding: px;
+        }
+
+        .hero {
+            grid-template-columns: none;
+            
+
+        }
+        .right-col {
+            width: 300px;
+            padding-top: 80px;
+            margin: 0 auto
+        }
+        /* .right-col {
+            background-color: red;
+            text-align: center; 
+            width: 300px;
+            padding-bottom: 40%;
+            
+        }
+
+        /* .hero {
+            text-align: center;
+            margin: 0 auto;
+        } */
+        .hero h1 {
+           text-align: center;
+           margin: 0 auto;
+        }
+        .image {
+            display: none;       
+        } 
+        .icon {
+            color: var(--primary-color);
+            display: inline-flex;
+            width: 12%;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 20px;
+            margin: 12px;
+            border: 3px solid lightblue;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transfrom 0.5s;
+            font-size: 35px;
+            padding: 10px;
+        }
+
+    
+        .about-me {
+        display: inline-block;
+        }
+
+        .section-title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        }
+
+        .contact-box {
+        padding: 0 30px 80px;
+        }
+        .contact-box h3 {
+            text-align: center;
+            padding-top: 20px;
+        }
+     
     }
-        
-}
